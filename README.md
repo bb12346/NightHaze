@@ -2,14 +2,15 @@
 
 This is the repository that contains source code for the [NightHaze website](https://github.com/bb12346/NightHaze.github.io).
  
-If you find Nerfies useful for your work please cite:
+If you find NightHaze useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@inproceedings{lin2024nightrain,
+  title={NightRain: Nighttime Video Deraining via Adaptive-Rain-Removal and Adaptive-Correction},
+  author={Lin, Beibei and Jin, Yeying and Yan, Wending and Ye, Wei and Yuan, Yuan and Tan, Robby T},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
 }
+
 ```
 
 # Website License
