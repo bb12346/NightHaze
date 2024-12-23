@@ -1,4 +1,4 @@
-# Nerfies
+# NightHaze (AAAI 2025)
 
 This is the repository that contains source code for the [NightHaze website](https://github.com/bb12346/NightHaze.github.io).
  
