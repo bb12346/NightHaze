@@ -1,7 +1,7 @@
 # Nerfies
 
 This is the repository that contains source code for the [NightHaze website](https://github.com/bb12346/NightHaze.github.io).
-
+ 
 If you find Nerfies useful for your work please cite:
 ```
 @article{park2021nerfies
