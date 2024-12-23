@@ -4,13 +4,12 @@ This is the repository that contains source code for the [NightHaze website](htt
  
 If you find NightHaze useful for your work please cite:
 ```
-@inproceedings{lin2024nightrain,
-  title={NightRain: Nighttime Video Deraining via Adaptive-Rain-Removal and Adaptive-Correction},
+@article{lin2024nighthaze,
+  title={NightHaze: Nighttime Image Dehazing via Self-Prior Learning},
   author={Lin, Beibei and Jin, Yeying and Yan, Wending and Ye, Wei and Yuan, Yuan and Tan, Robby T},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2025}
+  journal={arXiv preprint arXiv:2403.07408},
+  year={2024}
 }
-
 ```
 
 # Website License
