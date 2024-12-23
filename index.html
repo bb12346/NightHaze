@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="NightHaze: Nighttime Image Dehazing via Self-Prior Learning.">
   <meta name="keywords" content="Nighttime Dehazing, Prior Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NightHaze: Nighttime Image Dehazing via Self-Prior Learning</title>
@@ -215,7 +215,7 @@
             While our self-prior learning is considerably effective in suppressing glow and revealing details of background scenes, in some cases, there are still some undesired artifacts that remain, particularly in the forms of over-suppression. 
             To address these artifacts, we propose a self-refinement module based on the semi-supervised teacher-student framework. 
             Our NightHaze, especially our MAE-like self-prior learning, shows that models trained with severe augmentation effectively improve the visibility of input haze images, approaching the clarity of clear nighttime images. 
-            Extensive experiments demonstrate that our NightHaze achieves state-of-the-art performance, outperforming existing nighttime image dehazing methods by a substantial margin of 15.5\% for MUSIQ  and 23.5\% for ClipIQA.  
+            Extensive experiments demonstrate that our NightHaze achieves state-of-the-art performance, outperforming existing nighttime image dehazing methods by a substantial margin of 15.5% for MUSIQ and 23.5% for ClipIQA.  
           </p>
 
         </div>
@@ -223,6 +223,83 @@
     </div>
     <!--/ Abstract. -->
 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Pipeline -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Pipeline</h2>
+        <div class="content has-text-justified">
+           <p>
+           Overview of our self-prior learning.
+          </p>
+           <div class="content has-text-centered">
+        <img src="./static/images/overview.png" alt="Framework overview" style="width:80%; max-width:800px; margin-bottom: 30px;">
+        </div>
+          <p>
+            This approach aims to produce strong priors that are resilient to real-world night haze degradations. 
+            Given a clear nighttime image, we blend clear images with various maps collected from real-world haze images and add noise to these blended images. 
+            The augmented input is then fed into an Encoder-Decoder framework to recover the clear background. 
+            The loss is a simple L1 loss between the reconstructed image and the clear input. 
+            The key to self-prior learning is the severity of the augmentation. 
+            By increasing the noise values to approach as high as the pixel intensity values of the glow and light effect blended images, our augmentation becomes severe, resulting in stronger priors.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Pipeline -->
+
+  </div>
+</section>
+  
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+
+   
+    <!-- Experiments -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Qualitative and Quantitative Results</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Qualitative Results</h3>
+        <div class="content has-text-justified">
+<!--           <p>
+            Here are some qualitative results.
+          </p> -->
+        </div>
+        <div class="content has-text-centered">
+        <img src="./static/images/Qualitative.png" alt="Qualitative Results" style="width:80%; max-width:800px; margin-bottom: 30px;">
+        </div>
+        
+        <h3 class="title is-4">Quantitative Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            Here are critical experiment results in zero-shot HOI detection.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/Quantitative.png" alt="Quantitative Results" style="width:80%; max-width:800px; margin-bottom: 30px;">
+  
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+    <!--/ Experiments -->
+
+
+
+
+  </div>
+</section>
+  
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
