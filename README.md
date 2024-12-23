@@ -1,6 +1,6 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [NightHaze website](https://github.com/bb12346/NightHaze.github.io).
 
 If you find Nerfies useful for your work please cite:
 ```
