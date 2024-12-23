@@ -1,6 +1,6 @@
 # NightHaze (AAAI 2025)
 
-This is the repository that contains source code for the [NightHaze website](https://github.com/bb12346/NightHaze.github.io).
+This is the repository that contains source code for the [NightHaze website](https://bb12346.github.io/NightHaze.github.io/).
  
 If you find NightHaze useful for your work please cite:
 ```
